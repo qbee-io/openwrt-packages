@@ -107,7 +107,7 @@ jobs:
           FEEDNAME: packages_ci
           INDEX: 1
           KEY_BUILD: ${{ env.KEY_BUILD }}
-          V: s
+          V: sc
 
       - name: Move created packages to project dir
         if: always()
