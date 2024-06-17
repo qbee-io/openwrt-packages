@@ -26,9 +26,11 @@ include $(INCLUDE_DIR)/package.mk
 include $(TOPDIR)/feeds/packages/lang/golang/golang-package.mk
 
 define Package/qbee-agent
-	SECTION:=admin
-	CATEGORY:=Administration
-	TITLE:=qbee.io fleet management agent
+  SECTION:=admin
+  CATEGORY:=Administration
+  TITLE:=qbee.io fleet management agent
+  URL:=https://qbee.io
+  DEPENDS:=$(GO_ARCH_DEPENDS)
 endef
 
 define Package/qbee-agent/description
