@@ -18,8 +18,9 @@ PKG_BUILD_FLAGS:=no-mips16
 PKG_BUILD_PARALLEL:=1
 
 GO_PKG:=go.qbee.io/agent
-GO_PKG_LDFLAGS:=-X go.qbee.io/agent/app.Version=$(PKG_VERSION) \
-	-X go.qbee.io/agent/app.Commit=$(PKG_GIT_COMMIT)
+GO_PKG_LDFLAGS_X:= \
+	$(GO_PKG)/app.Version=$(PKG_VERSION) \
+	$(GO_PKG)/app.Commit=$(PKG_SOURCE_VERSION)
 
 include $(INCLUDE_DIR)/package.mk
 include $(TOPDIR)/feeds/packages/lang/golang/golang-package.mk
