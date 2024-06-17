@@ -11,6 +11,7 @@ PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.bz2
 PKG_GIT_URL:=github.com/qbee-io/qbee-agent
 PKG_GIT_REF:=$(PKG_VERSION)
 PKG_SOURCE_URL:=https://$(PKG_GIT_URL)
+PKG_MIRROR_HASH:=52712fb50d471fd6e723689f021dab7cd51901bf30aee8aa85ec96fb5d639ae0
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_VERSION:=$(PKG_VERSION)
 PKG_MAINTAINER:=Jon Henrik Bjørnstad <jonhenrik@qbee.io>
